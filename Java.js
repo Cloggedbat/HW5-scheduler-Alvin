@@ -58,8 +58,10 @@ for (var i = 0; i < textareas.length; i++){
 var currentTextarea = $(textareas[i])
 
 let textareahour = currentTextarea.attr("id");
+
 let currenthour = NowMoment.format('H')
-console.log(textareahour, currenthour, currentTextarea)
+
+
 
 if (currenthour > parseInt(textareahour)){
     currentTextarea.addClass("past")
